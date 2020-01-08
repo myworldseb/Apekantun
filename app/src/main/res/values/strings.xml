@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Apekantun</string>
+    <string name="title_activity_referencia">ReferenciaActivity</string>
+    <string name="Correo">Correo</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Iniciasesion">Iniciar Sesion</string>
+</resources>
