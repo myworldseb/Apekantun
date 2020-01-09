@@ -3,4 +3,6 @@
     <dimen name="edittext_textsize_login">22sp</dimen>
     <dimen name="padding_horizontal_login">32dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="edittext_margin_createacount">10dp</dimen>
+    <dimen name="margin_button_createacount">26dp</dimen>
 </resources>

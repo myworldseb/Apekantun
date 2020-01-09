@@ -6,17 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".view.CreateAccountActivity">
 
-    <androidx.core.widget.NestedScrollView
+
+
+
+
+    <include layout="@layout/actionbar_toolbar"/>
+
+
+    <ScrollView
         android:layout_width="match_parent"
         android:fillViewport="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_height="match_parent">
 
-<androidx.appcompat.widget.LinearLayoutCompat
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/activity_vertical_margin"
     android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextBlack"
+        android:layout_marginTop="@dimen/edittext_margin_createacount">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/correo"
+            android:hint="@string/Correo"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextBlack">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombre"
+            android:hint="@string/Nombre"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -26,13 +59,99 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/correo"
-            android:hint="@string/Correo"
+            android:id="@+id/apellido1"
+            android:hint="@string/Apellido1"
             />
     </com.google.android.material.textfield.TextInputLayout>
-</androidx.appcompat.widget.LinearLayoutCompat>
 
-    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextBlack">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/apellido2"
+            android:hint="@string/Apellido2"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextBlack">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contraseña_registro"
+            android:hint="@string/Contraseña"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextBlack">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmarcopntraseña"
+            android:hint="@string/ConfirmarContraseña"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:theme="@style/EditTextBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/run"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/Run"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:theme="@style/EditTextBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/Dv"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Registrar"
+        android:theme="@style/RaiseButtonDark"
+        />
+
+
+</LinearLayout>
+
+    </ScrollView>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

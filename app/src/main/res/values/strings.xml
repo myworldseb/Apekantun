@@ -4,4 +4,16 @@
     <string name="Correo">Correo</string>
     <string name="Contraseña">Contraseña</string>
     <string name="Iniciasesion">Iniciar Sesion</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Apellido1">Primer Apellido</string>
+    <string name="Apellido2">Segundo Apellido</string>
+    <string name="ConfirmarContraseña">Conformar Contraseña</string>
+    <string name="Run">Run</string>
+    <string name="Dv">DV</string>
+    <string name="Registrar">Registrar</string>
+    <string name="toolbar_tittle_registrar">Registrar</string>
+    <string name="Fichageneral">Ficha general de viaje</string>
+    <string name="Fichaalimentacion">Ficha de alimentación</string>
+    <string name="Nominaparticipantes">Nomina de participantes</string>
+    <string name="Fichaalojamiento">Ficha de alojamiento</string>
 </resources>
