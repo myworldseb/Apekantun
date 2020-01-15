@@ -41,44 +41,60 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/activity_vertical_margin"
-        android:orientation="vertical"
+        android:weightSum="1"
+        android:orientation="horizontal"
         android:gravity="center"
         >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/Fichageneral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Fichageneral"
+                android:theme="@style/RaiseButtonDark"
 
-        <Button
-        android:id="@+id/Fichageneral"
+                />
+
+
+            <Button
+                android:id="@+id/Fichaalimentacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Fichaalimentacion"
+                android:theme="@style/RaiseButtonDark"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:orientation="vertical"
+            android:gravity="center"
+    android:layout_weight="0.5">
+    <Button
+        android:id="@+id/Nominaparticipantes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Fichageneral"
+        android:text="@string/Nominaparticipantes"
+        android:theme="@style/RaiseButtonDark"
+
+        />
+    <Button
+        android:id="@+id/Fichaalojamiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Fichaalojamiento"
         android:theme="@style/RaiseButtonDark"
 
         />
 
+</LinearLayout>
 
-         <Button
-        android:id="@+id/Fichaalimentacion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/Fichaalimentacion"
-        android:theme="@style/RaiseButtonDark"
-        android:layout_marginTop="@dimen/margin_button_createacount"
-        />
-        <Button
-            android:id="@+id/Nominaparticipantes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Nominaparticipantes"
-            android:theme="@style/RaiseButtonDark"
-            android:layout_marginTop="@dimen/margin_button_createacount"
-            />
-        <Button
-            android:id="@+id/Fichaalojamiento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Fichaalojamiento"
-            android:theme="@style/RaiseButtonDark"
-            android:layout_marginTop="@dimen/margin_button_createacount"
-            />
 
     </LinearLayout>
     </ScrollView>

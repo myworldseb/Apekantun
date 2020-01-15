@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.FichaGeneralActivity"></activity>
+        <activity android:name=".view.CrearViajeActivity"></activity>
+        <activity android:name=".view.FichaGeneralActivity" />
         <activity android:name=".view.PrincipalCoordinadorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
