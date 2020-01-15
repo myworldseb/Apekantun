@@ -14,7 +14,8 @@
         android:orientation="vertical"
         android:weightSum="1"
         android:background="@color/white"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -50,25 +51,41 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
             <Button
                 android:id="@+id/Fichageneral"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:text="@string/Fichageneral"
                 android:theme="@style/RaiseButtonDark"
+                android:onClick="goFichaGeneral"
 
                 />
-
-
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
             <Button
                 android:id="@+id/Fichaalimentacion"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:text="@string/Fichaalimentacion"
                 android:theme="@style/RaiseButtonDark"
-
                 />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
     android:layout_width="match_parent"
@@ -76,23 +93,37 @@
         android:orientation="vertical"
             android:gravity="center"
     android:layout_weight="0.5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
     <Button
         android:id="@+id/Nominaparticipantes"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:text="@string/Nominaparticipantes"
         android:theme="@style/RaiseButtonDark"
 
         />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
     <Button
         android:id="@+id/Fichaalojamiento"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:text="@string/Fichaalojamiento"
         android:theme="@style/RaiseButtonDark"
-
         />
-
+            </LinearLayout>
+            </LinearLayout>
 </LinearLayout>
 
 

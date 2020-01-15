@@ -16,4 +16,10 @@
     <string name="Fichaalimentacion">Ficha de alimentación</string>
     <string name="Nominaparticipantes">Nomina de participantes</string>
     <string name="Fichaalojamiento">Ficha de alojamiento</string>
+    <string name="FechaSolicitud">Fecha Solicitud</string>
+    <string name="FechaSolicitudtext">XX/XX/XXXX</string>
+    <string name="Registrarviaje">Registrar Viaje</string>
+    <string name="FechaRealizacion">Fecha Realizar</string>
+    <string name="toolbar_tittle_menu_coordinador">Menu Coordinador</string>
+    <string name="toolbar_tittle_crear_viaje">Crear Viaje</string>
 </resources>
