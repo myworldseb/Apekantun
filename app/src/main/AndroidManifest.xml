@@ -9,10 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.CrearViajeActivity">
-
+        <activity android:name=".view.DialogoParticipanteActivity"></activity>
+        <activity
+            android:name=".view.NominaParticipantesActivity"
+            android:parentActivityName=".view.PrincipalCoordinadorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.PrincipalCoordinadorActivity" />
         </activity>
-        <activity android:name=".view.FichaGeneralActivity" />
+        <activity android:name=".view.CrearViajeActivity" />
+        <activity
+            android:name=".view.FichaGeneralActivity"
+            android:parentActivityName=".view.PrincipalCoordinadorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.PrincipalCoordinadorActivity" />
+        </activity>
         <activity android:name=".view.PrincipalCoordinadorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +36,7 @@
             android:name=".ReferenciaActivity"
             android:label="@string/title_activity_referencia"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".view.CreateAccountActivity">
-
-        </activity>
+        <activity android:name=".view.CreateAccountActivity" />
         <activity android:name=".MainActivity" />
     </application>
 

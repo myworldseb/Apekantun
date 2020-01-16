@@ -29,6 +29,17 @@
                 android:layout_marginTop="20pt"
                 android:layout_marginLeft="30pt"/>
         </RelativeLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextBlack">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/destino"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:fillViewport="true"
@@ -43,7 +54,7 @@
         android:layout_height="match_parent"
         android:padding="@dimen/activity_vertical_margin"
         android:weightSum="1"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center"
         >
         <LinearLayout
@@ -51,12 +62,12 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             android:gravity="center"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:weightSum="1">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -77,52 +88,39 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5">
-            <Button
-                android:id="@+id/Fichaalimentacion"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/Fichaalimentacion"
-                android:theme="@style/RaiseButtonDark"
-                />
+
+                    <Button
+                        android:id="@+id/Nominaparticipantes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/Nominaparticipantes"
+                        android:theme="@style/RaiseButtonDark"
+                        android:onClick="goNomina"
+
+                        />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:orientation="horizontal"
             android:gravity="center"
     android:layout_weight="0.5">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:weightSum="1">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5">
-    <Button
-        android:id="@+id/Nominaparticipantes"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/Nominaparticipantes"
-        android:theme="@style/RaiseButtonDark"
 
-        />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5">
-    <Button
-        android:id="@+id/Fichaalojamiento"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/Fichaalojamiento"
-        android:theme="@style/RaiseButtonDark"
-        />
-            </LinearLayout>
+                <Button
+                    android:id="@+id/gasto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/Gasto"
+                    android:theme="@style/RaiseButtonDark"
+                    />
+
             </LinearLayout>
 </LinearLayout>
 

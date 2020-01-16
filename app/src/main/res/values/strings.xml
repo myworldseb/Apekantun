@@ -22,4 +22,17 @@
     <string name="FechaRealizacion">Fecha Realizar</string>
     <string name="toolbar_tittle_menu_coordinador">Menu Coordinador</string>
     <string name="toolbar_tittle_crear_viaje">Crear Viaje</string>
+    <string name="Nombreparticipante">Nombre Participante</string>
+    <string name="Rutpart">Rut</string>
+    <string name="Telefonoa">Telefono</string>
+    <string name="Telefonob">Telefono de emergencias</string>
+    <string name="apellidopart">Apellido</string>
+    <string name="Correopart">Correo</string>
+    <string name="toolbar_tittle_nomina">Nomina Participantes</string>
+    <string name="toolbar_tittle_fichageneral">Ficha General</string>
+    <string name="Cantidadparticipante">CantidadParticipantes</string>
+    <string name="Cantidadcoordinadores">Cantidad Coordinadores</string>
+    <string name="CantidadChofer">Cantidad Choferes</string>
+    <string name="guardarficha">Siguiente</string>
+    <string name="Gasto">Nominas de gasto</string>
 </resources>

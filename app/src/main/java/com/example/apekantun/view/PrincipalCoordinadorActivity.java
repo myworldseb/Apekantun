@@ -29,4 +29,10 @@ public class PrincipalCoordinadorActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void goNomina(View view){
+        Intent intent = new Intent(this,NominaParticipantesActivity.class );
+        startActivity(intent);
+
+    }
+
 }
