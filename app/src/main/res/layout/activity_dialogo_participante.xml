@@ -47,46 +47,71 @@
 
                 />
         </com.google.android.material.textfield.TextInputLayout>
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/nombre"
-            android:hint="@string/Nombreparticipante"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/apellido"
-            android:hint="@string/apellidopart"/>
+            android:layout_weight="0.8"
+            android:theme="@style/EditTextBlack">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rut"
-            android:hint="@string/Rutpart"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/Rutpart"
 
-        <EditText
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/telefonoa"
-            android:hint="@string/Telefonoa"/>
-        <EditText
+            android:layout_weight="0.8"
+            android:theme="@style/EditTextBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/telefonoa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/Telefonoa"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/telefonob"
-            android:hint="@string/Telefonob"
-            android:theme="@style/EditTextBlack"/>
-        <EditText
+            android:layout_weight="0.8"
+            android:theme="@style/EditTextBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/telefonob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/Telefonob"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/correo"
-            android:hint="@string/Correopart"
-            android:theme="@style/EditTextBlack"/>
+            android:layout_weight="0.8"
+            android:theme="@style/EditTextBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/correo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/Correopart"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.8"
                 android:text="Agregar"
                 android:id="@+id/D_agregar"
                 android:theme="@style/RaiseButtonDark"

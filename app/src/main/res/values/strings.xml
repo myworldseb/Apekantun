@@ -35,4 +35,7 @@
     <string name="CantidadChofer">Cantidad Choferes</string>
     <string name="guardarficha">Siguiente</string>
     <string name="Gasto">Nominas de gasto</string>
+    <string name="runcho">Run Conductor</string>
+    <string name="nombrecho">Nombre Conductor</string>
+    <string name="apellidocho">Apellido Conductor</string>
 </resources>

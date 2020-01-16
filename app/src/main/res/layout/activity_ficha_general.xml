@@ -9,93 +9,56 @@
 
 
     <include layout="@layout/actionbar_toolbar"/>
-
-<LinearLayout
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:orientation="vertical"
-    android:weightSum="1"
-    >
-    <RelativeLayout
+    android:fillViewport="true"
+    android:layout_margin="10dp">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.5"
-        android:layout_margin="10dp"
-
-        >
-        <com.google.android.material.textfield.TextInputLayout
+        android:orientation="vertical"
+        android:weightSum="1">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/EditTextBlack"
-            android:layout_marginTop="@dimen/edittext_margin_createacount">
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
 
-            <com.google.android.material.textfield.TextInputEditText
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Cantidadcoordinadores"
-                android:hint="@string/Cantidadcoordinadores"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:theme="@style/EditTextBlack">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/EditTextBlack"
-            android:paddingTop="50dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nombre"
+                    android:hint="@string/Nombre"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
 
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/coordinator"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-    </RelativeLayout>
-    <RelativeLayout
+    </LinearLayout>
+    <Button
+        android:id="@+id/siguienteficha"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.5"
-        android:layout_margin="10dp"
+        android:layout_height="15dp"
+        android:text="@string/guardarficha"
+        android:theme="@style/RaiseButtonDark"/>
+</ScrollView>
 
-        >
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/EditTextBlack"
-            android:layout_marginTop="@dimen/edittext_margin_createacount">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/Cantidadchoferes"
-                android:hint="@string/CantidadChofer"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/EditTextBlack"
-            android:paddingTop="50dp">
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/choferes"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-    </RelativeLayout>
-
-<Button
-    android:id="@+id/siguienteficha"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/guardarficha"
-    android:theme="@style/RaiseButtonDark"/>
-
-
-</LinearLayout>
-
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
