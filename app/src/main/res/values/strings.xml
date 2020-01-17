@@ -51,4 +51,18 @@
     <string name="textesubcantidadpart">Recuerda la cantidad de participantes sin contar a los integrantes de ayekantun</string>
     <string name="toolbar_tittle_dialogopart">Crear Participante</string>
     <string name="toolbar_gastos">Gastos</string>
+    <string name="registrargasto">Registrar Gasto</string>
+    <string name="registrarpago">Registrar Pago</string>
+    <string name="registrarempresa">Registrar Empresa</string>
+    <string name="vergasto">Ver Gastos</string>
+    <string name="textoprincipalgastos">Para registrar un pago tienes que tener registrado un gasto y para registrar un gasto tienes que tener registrada la empresa con la cual realizaste el gasto</string>
+    <string name="toolbar_tittle_reg_empresa">Registrar Empresa</string>
+    <string name="NombreEmpresa">Nombre Empresa</string>
+    <string name="telefonoempresa">Telefono Empresa</string>
+    <string name="ContactoEmpresa">Nombre Contacto</string>
+    <string name="Direccion">Direccion de la empresa</string>
+    <string name="numeroempresa">numero empresa</string>
+    <string name="bloqueempresa">numero de bloque</string>
+    <string name="puertaempresa">Puerta</string>
+    <string name="textoregistroempresadireccion">Para poder registar una nueva empresa primero debes registrar su direccion</string>
 </resources>

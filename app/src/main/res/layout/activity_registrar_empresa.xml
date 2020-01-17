@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RegistrarEmpresaActivity">
+    <include layout="@layout/actionbar_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/activity_vertical_margin"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/textoregistroempresadireccion"
+                style="@style/Textsubtitulo"
+
+
+                />
+            <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:theme="@style/EditTextBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/direccionempresa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/Direccion"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:theme="@style/EditTextBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/telefonoempresa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/numeroempresa"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:theme="@style/EditTextBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bloqueempresa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/bloqueempresa"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:theme="@style/EditTextBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/puertaempresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/puertaempresa"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/region"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/provincia"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/comuna"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    <Button
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+android:onClick="goresgistrarempresados"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Agregar"
+        android:id="@+id/D_agregar"
+        android:theme="@style/RaiseButtonDark"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

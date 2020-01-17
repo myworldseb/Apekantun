@@ -34,5 +34,14 @@ public class PrincipalCoordinadorActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void goGasto(View view){
+        Intent intent = new Intent(this,PrincipalGastosActivity.class);
+        startActivity(intent);
+    }
+    public void goCrearEmpresa(View view){
+        Intent intent = new Intent(this,RegistrarEmpresaActivity.class );
+        startActivity(intent);
+
+    }
 
 }

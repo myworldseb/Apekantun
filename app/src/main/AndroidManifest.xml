@@ -9,7 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.PrincipalGastosActivity"
+        <activity android:name=".view.RegistarEmpresaDosActivity"
+            android:parentActivityName=".view.RegistrarEmpresaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.RegistrarEmpresaActivity" />
+
+        </activity>
+        <activity
+            android:name=".view.RegistrarEmpresaActivity"
+            android:parentActivityName=".view.PrincipalGastosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.PrincipalGastosActivity" />
+        </activity>
+        <activity
+            android:name=".view.PrincipalGastosActivity"
             android:parentActivityName=".view.PrincipalCoordinadorActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

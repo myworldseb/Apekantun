@@ -1,9 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.PrincipalGastosActivity">
+    <include layout="@layout/actionbar_toolbar"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:weightSum="1"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="bottom"
+                >
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/registargasto"
+                    android:theme="@style/RaiseButtonDark"
+                    android:text="@string/registrargasto"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="bottom">
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/registarpago"
+                    android:theme="@style/RaiseButtonDark"
+                    android:text="@string/registrarpago"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+                <Button
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/vergastos"
+                    android:theme="@style/RaiseButtonDark"
+                    android:text="@string/vergasto"
+
+                    />
+            </LinearLayout>
+        <TextView
+            style="@style/Textsubsubtitulos"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textoprincipalgastos"
+
+
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
