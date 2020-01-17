@@ -42,4 +42,20 @@
         <item name="colorControlNormal">@color/editTextColorBlack</item>
         <item name="colorControlActivated">@color/editTextColorBlack</item>
     </style>
+
+    <style name="Textviewtitulos" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/edittext_textsize_titulo</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Textsubtitulo" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/edittext_textsize_subtitulo</item>
+        <item name="android:textStyle"></item>
+    </style>
+    <style name="Textsubsubtitulos" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/edittext_textsize_subsubtitulo</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
 </resources>

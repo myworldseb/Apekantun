@@ -5,4 +5,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="edittext_margin_createacount">10dp</dimen>
     <dimen name="margin_button_createacount">26dp</dimen>
+    <dimen name="edittext_textsize_titulo">30sp</dimen>
+    <dimen name="edittext_textsize_subtitulo">19dp</dimen>
+    <dimen name="edittext_textsize_subsubtitulo">15dp</dimen>
 </resources>

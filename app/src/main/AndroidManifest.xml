@@ -9,7 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.DialogoParticipanteActivity"></activity>
+        <activity android:name=".view.PrincipalGastosActivity"
+            android:parentActivityName=".view.PrincipalCoordinadorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.PrincipalCoordinadorActivity" />
+        </activity>
+        <activity android:name=".view.PrincipalAdministradorActivity" />
+        <activity
+            android:name=".view.DialogoParticipanteActivity"
+            android:parentActivityName=".view.NominaParticipantesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.NominaParticipantesActivity" />
+        </activity>
         <activity
             android:name=".view.NominaParticipantesActivity"
             android:parentActivityName=".view.PrincipalCoordinadorActivity">

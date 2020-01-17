@@ -33,9 +33,22 @@
     <string name="Cantidadparticipante">CantidadParticipantes</string>
     <string name="Cantidadcoordinadores">Cantidad Coordinadores</string>
     <string name="CantidadChofer">Cantidad Choferes</string>
-    <string name="guardarficha">Siguiente</string>
+    <string name="guardarficha">Guardar</string>
     <string name="Gasto">Nominas de gasto</string>
     <string name="runcho">Run Conductor</string>
     <string name="nombrecho">Nombre Conductor</string>
     <string name="apellidocho">Apellido Conductor</string>
+    <string name="correocho">Correo Conductor</string>
+    <string name="datoscho">Datos Conductor</string>
+    <string name="textocantidadcoor">Seleccione los coordinadores uno por uno en estas listas.</string>
+    <string name="coordinador1">Primer Coordinador</string>
+    <string name="coordinador2">Segundo Coordinador</string>
+    <string name="coordinador3">Tercer Coordinador</string>
+    <string name="datoscoor">Datos Coordinador</string>
+    <string name="textocond">Complete los datos de el conductor</string>
+    <string name="attentioncond">Si la empresa de el conductor no esta registrada por favor realizelo antes de completar este formulario</string>
+    <string name="textocantidadpart">Introduzca la cantidad de participantes en el viaje</string>
+    <string name="textesubcantidadpart">Recuerda la cantidad de participantes sin contar a los integrantes de ayekantun</string>
+    <string name="toolbar_tittle_dialogopart">Crear Participante</string>
+    <string name="toolbar_gastos">Gastos</string>
 </resources>
