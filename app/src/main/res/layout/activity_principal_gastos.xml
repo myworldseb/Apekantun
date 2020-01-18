@@ -42,6 +42,7 @@
                     android:id="@+id/registargasto"
                     android:theme="@style/RaiseButtonDark"
                     android:text="@string/registrargasto"
+                    android:onClick="goregistrargasto"
 
                     />
             </LinearLayout>
@@ -56,6 +57,7 @@
                     android:id="@+id/registarpago"
                     android:theme="@style/RaiseButtonDark"
                     android:text="@string/registrarpago"
+                    android:onClick="goregistropago"
 
                     />
             </LinearLayout>

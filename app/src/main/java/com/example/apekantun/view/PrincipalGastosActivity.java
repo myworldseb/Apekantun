@@ -24,5 +24,16 @@ public class PrincipalGastosActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
 
     }
+    public void goregistrargasto(View view){
+        Intent intent = new Intent(this,RegistarGastoActivity.class );
+        startActivity(intent);
 
+    }
+
+
+    public void goregistropago(View view){
+        Intent intent = new Intent(this,RegistrarPagoActivity.class );
+        startActivity(intent);
+
+    }
 }

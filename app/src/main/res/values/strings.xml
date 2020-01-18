@@ -65,4 +65,14 @@
     <string name="bloqueempresa">numero de bloque</string>
     <string name="puertaempresa">Puerta</string>
     <string name="textoregistroempresadireccion">Para poder registar una nueva empresa primero debes registrar su direccion</string>
+    <string name="fichageneralbus">Datos Bus</string>
+    <string name="textobus">Complete los datos del bus</string>
+    <string name="atencionbus">Si la empresa del bus no esta registrada por favor realizelo antes de completar este formulario</string>
+    <string name="patentebus">Patente Bus</string>
+    <string name="observacionesbus">Observacion Bus</string>
+    <string name="toolbar_tittle_reg_gasto">Registrar Gasto</string>
+    <string name="total">total</string>
+    <string name="toolbar_tittle_reg_pago">Registar Pago</string>
+    <string name="FechaPago">Fecha Pago</string>
+    <string name="montopago">Cantidad Pagada</string>
 </resources>
